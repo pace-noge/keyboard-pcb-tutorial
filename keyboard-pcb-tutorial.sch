@@ -376,4 +376,72 @@ Text GLabel 6900 3300 0    50   Input ~ 0
 D+
 Text GLabel 6900 3400 0    50   Input ~ 0
 D-
+$Comp
+L random-keyboard-parts:Molex-0548190589 USB?
+U 1 1 60F943EE
+P 9750 1100
+F 0 "USB?" V 10287 1067 60  0000 C CNN
+F 1 "Molex-0548190589" V 10181 1067 60  0000 C CNN
+F 2 "" H 9750 1100 60  0001 C CNN
+F 3 "" H 9750 1100 60  0001 C CNN
+	1    9750 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 60F94AA6
+P 10500 900
+F 0 "F?" V 10705 900 50  0000 C CNN
+F 1 "500mA" V 10614 900 50  0000 C CNN
+F 2 "" H 10550 700 50  0001 L CNN
+F 3 "~" H 10500 900 50  0001 C CNN
+	1    10500 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10600 900  10900 900 
+Wire Wire Line
+	10900 900  10900 850 
+$Comp
+L power:+5V #PWR?
+U 1 1 60F98656
+P 10900 850
+F 0 "#PWR?" H 10900 700 50  0001 C CNN
+F 1 "+5V" H 10915 1023 50  0000 C CNN
+F 2 "" H 10900 850 50  0001 C CNN
+F 3 "" H 10900 850 50  0001 C CNN
+	1    10900 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 900  10250 900 
+$Comp
+L power:VCC #PWR?
+U 1 1 60F99C54
+P 10250 900
+F 0 "#PWR?" H 10250 750 50  0001 C CNN
+F 1 "VCC" H 10267 1073 50  0000 C CNN
+F 2 "" H 10250 900 50  0001 C CNN
+F 3 "" H 10250 900 50  0001 C CNN
+	1    10250 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 900  10050 900 
+Connection ~ 10250 900 
+Text GLabel 10200 1000 0    50   Output ~ 0
+D-
+Text GLabel 10200 1100 0    50   Output ~ 0
+D=
+$Comp
+L power:GND #PWR?
+U 1 1 60F9CE3E
+P 10050 1300
+F 0 "#PWR?" H 10050 1050 50  0001 C CNN
+F 1 "GND" H 10055 1127 50  0000 C CNN
+F 2 "" H 10050 1300 50  0001 C CNN
+F 3 "" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
